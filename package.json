@@ -1,0 +1,19 @@
+{
+  "name": "backTripCost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "iniciar": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "pg": "^7.11.0"
+  }
+}
