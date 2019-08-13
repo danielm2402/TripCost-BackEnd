@@ -2,7 +2,7 @@ const { Client }=require('pg');
 const connection ={
     user: 'postgres',
     host:'localhost',
-    database:'tripcost',
+    database:'bdtripcost',
     password:'clsestudiante',
     port:5432
 }
