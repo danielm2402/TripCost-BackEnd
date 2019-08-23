@@ -5,7 +5,7 @@ module.exports = (app) =>{
     });
 
     app.get("/user/:id",userController.user);
-    app.post("/createUser",userController.createUser);
+    app.post("/register",userController.createUser);
     app.post("/login",userController.login);
     app.use("",userController.middleware);
     app.get("/users",userController.users);

@@ -6,6 +6,7 @@ const connection ={
     password:'clsestudiante',
     port:5432
 }
+
 const client= new Client(connection);
 
 
