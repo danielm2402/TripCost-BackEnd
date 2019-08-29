@@ -3,7 +3,7 @@ module.exports={
     tours: (req, res)=>{
         console.log("obteniendo tours");
 
-        db.query("SELECT * FROM TOUR;",(error,result,field)=>{
+        db.query("SELECT tid, tnombre, tdescripcion, idciudad, imlink FROM TOUR NATURAL JOIN TOURIMAGES;",(error,result,field)=>{
             if(error){
                 res.status(502).send(error);
             }
@@ -19,6 +19,17 @@ module.exports={
                 res.status(502).send(error)
             }
             res.send(result['rows']);
+
+        });
+    },
+    ciudad:(req, res)=>{
+        const { id }= req.params
+        console.log("obteniendo ciudad");
+        db.query("SELECT * FROM CIUDAD WHERE idciudad="+id,(error,result,field)=>{
+            if(error){
+                res.status(502).send(error)
+            }
+            res.send(result);
 
         });
     }

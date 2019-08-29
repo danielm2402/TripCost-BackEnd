@@ -6,5 +6,6 @@ module.exports=(app)=>{
 
     app.get("/tours",tourController.tours);
     app.get("/tour/:id", tourController.tour);
+    app.get("/ciudad/:id", tourController.ciudad);
 
 };
